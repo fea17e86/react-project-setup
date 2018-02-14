@@ -14,20 +14,24 @@ This repository aims to collect resources, opinions and conclusions surrounding 
         - [1.3.1. Resources](#131-resources)
     - [1.4. Typescript](#14-typescript)
         - [1.4.1. Resources](#141-resources)
-- [2. Bundler, Dev Server](#2-bundler-dev-server)
+- [2. Build process](#2-build-process)
     - [2.1. Webpack](#21-webpack)
+    - [2.2. gulp](#22-gulp)
+    - [2.3. Conclusion](#23-conclusion)
 - [3. create-react-app](#3-create-react-app)
+    - [3.1. Resources](#31-resources)
 - [4. Styling](#4-styling)
     - [4.1. CSS Modules](#41-css-modules)
     - [4.2. SCSS](#42-scss)
     - [4.3. Conclusion](#43-conclusion)
 - [5. State Management](#5-state-management)
-    - [5.1. Redux and alternatives](#51-redux-and-alternatives)
-    - [5.2. Redux](#52-redux)
+    - [5.1. Redux](#51-redux)
+    - [5.2. Alternatives](#52-alternatives)
     - [5.3. Conclusion](#53-conclusion)
 - [6. Testing & Code Conventions](#6-testing--code-conventions)
     - [6.1. Lint](#61-lint)
     - [6.2. Prettier](#62-prettier)
+- [7. npm vs. yarn](#7-npm-vs-yarn)
 
 <!-- /TOC -->
 
@@ -86,11 +90,36 @@ So now that we decided to use TypeScript, how do we actually use it? It can be q
 * http://artsy.github.io/blog/2017/11/27/Babel-7-and-TypeScript/
 * https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter
 
-# 2. Bundler, Dev Server
+# 2. Build process
 
 ## 2.1. Webpack
 
+## 2.2. gulp
+
+## 2.3. Conclusion
+
 # 3. create-react-app
+
+[create-react-app](https://github.com/facebook/create-react-app) is really practical it creates react apps with no build configuration. Meaning all the webpack tweaks, seting up a dev server etc. are taken care of - isn't that [awesome](https://medium.com/@tuchk4/why-i-love-create-react-app-e63b1be689a3)? The idea is that the scripts of create-react-app take care of all the configuration files and the basic folder structure. As long as you don't need something very specific or crazy, you should be fine staying with create-react-app.
+
+There are additional scripts that boost the functionality of the create-react-scripts, for example one for [TypeScript support](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter). You can even create your [own custom create-react-app template](https://auth0.com/blog/how-to-configure-create-react-app/).
+
+Once you reach the point where the ready made template isn't doing it for you anymore, you [eject](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject) create-react-app and all the managed configuration files will be available and you will be no longer using create-react-app. **This operation can not be undone!**
+
+Even though there was a [plugin system](https://github.com/facebook/create-react-app/issues/670) discussed, it doesn't seem like they are going to work on that right now. But it seems like there might be an [alternative](https://neutrino.js.org/): [Neutrino](https://neutrino.js.org/) - I will check that out soon.
+
+Try to stay as long as possible with create-react-app. It keeps the project clean and abstracts build process configuration and are usually more or less the same anyway. Another benefit, create-react-app will take care of updating their scripts, which means you only have to update create-react-app to receive webpack, babel etc. updates.
+
+## 3.1. Resources
+
+* https://github.com/facebook/create-react-app
+* https://medium.com/@tuchk4/why-i-love-create-react-app-e63b1be689a3
+* https://hackernoon.com/simple-react-development-in-2017-113bd563691f
+* https://www.fullstackreact.com/p/using-webpack-with-create-react-app/
+* https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md
+* https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter
+* https://auth0.com/blog/how-to-configure-create-react-app/
+* https://neutrino.js.org/
 
 # 4. Styling
 
@@ -102,9 +131,9 @@ So now that we decided to use TypeScript, how do we actually use it? It can be q
 
 # 5. State Management
 
-## 5.1. Redux and alternatives
+## 5.1. Redux
 
-## 5.2. Redux
+## 5.2. Alternatives
 
 ## 5.3. Conclusion
 
@@ -113,3 +142,5 @@ So now that we decided to use TypeScript, how do we actually use it? It can be q
 ## 6.1. Lint
 
 ## 6.2. Prettier
+
+# 7. npm vs. yarn
