@@ -106,7 +106,7 @@ There are additional scripts that boost the functionality of the create-react-sc
 
 Once you reach the point where the ready made template isn't doing it for you anymore, you [eject](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#npm-run-eject) create-react-app and all the managed configuration files will be available and you will be no longer using create-react-app. **This operation can not be undone!**
 
-Even though there was a [plugin system](https://github.com/facebook/create-react-app/issues/670) discussed, it doesn't seem like they are going to work on that right now. But it seems like there might be an [alternative](https://neutrino.js.org/): [Neutrino](https://neutrino.js.org/) - I will check that out soon.
+Even though there was a [plugin system](https://github.com/facebook/create-react-app/issues/670) discussed, it doesn't seem like they are going to work on that right now. But it seems like there might be an alternative: [Neutrino](https://neutrino.js.org/) - I will check that out soon.
 
 Try to stay as long as possible with create-react-app. It keeps the project clean and abstracts build process configuration and are usually more or less the same anyway. Another benefit, create-react-app will take care of updating their scripts, which means you only have to update create-react-app to receive webpack, babel etc. updates.
 
