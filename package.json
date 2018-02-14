@@ -1,0 +1,26 @@
+{
+  "name": "react-project-setup",
+  "version": "1.0.0",
+  "description": "This repository aims to collect resources, opinions and conclusions surrounding react related topics, to provide a guideline for setting up react projects and to provide an example implementation.",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fea17e86/react-project-setup.git"
+  },
+  "keywords": [
+    "project",
+    "setup",
+    "es6",
+    "babel",
+    "typescript",
+    "flow",
+    "react",
+    "redux"
+  ],
+  "author": "fea17e86@mail.de",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fea17e86/react-project-setup/issues"
+  },
+  "homepage": "https://github.com/fea17e86/react-project-setup#readme"
+}
